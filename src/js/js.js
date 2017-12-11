@@ -14,17 +14,22 @@ $(document).ready(function() {
 
   //SHOW PLACES LINKS
   let hw = $(".house-items").offset().top; //расстояние до верха окна
-  //console.log(hw + "verh okna");
+
   let winH = $(window).height(); //высота окна
   let toEl = hw - winH; //
 
   $(window).scroll(function() {
     let winScrollT = $(this).scrollTop(); // высота прокрутки
-    //console.log(hw + "verh okna");
-    //console.log(winScrollT);
+    console.log(winScrollT + "///" + hw);
+    let imgH = winScrollT - hw;
+    let imgW = $('.black__img').width();
+    $('.color__img').css('width', imgW);
     if (winScrollT > hw - 100) {
       $(".container-house").css("position", "fixed");
     }
+    $('.mmm').css('height', imgH + 'px');
+    $('.white').css('height', imgH + 'px');
+    console.log($('.color__img').height());
     let itH = $(".container-house").height();
     $(".house-links").css("height", itH * 2);
     $(".house-empty").css("height", itH);
@@ -32,16 +37,6 @@ $(document).ready(function() {
   });
 
   //BLOCK INFO NAMES
-
-  //my script
-  // let title1 = ['3785 км.', '2 миллиона', 'Пекин']
-  // $('#title2').click(function(){
-  //   let arr = $(this).text();
-  //   console.log(arr);
-  //   let arrStr = arr.split('');
-  //   console.log(arrStr);
-  //   $('.hideInfo').append('<span>arrStr[0]</span>');
-  // });
 
   // по скролу
   var target = $(".block__info__title");
@@ -98,28 +93,7 @@ $(document).ready(function() {
 
   //HOUSE
 
-  let imgW = $(".black__img").css("width");
-  $(".color__img").css("width", imgW);
-
-  $(window).resize(function() {
-    let imgW2 = $(".black__img").css("width");
-    $(".color__img").css("width", imgW2);
-  });
-
-  $(window).scroll(function() {
-    var off = $(".container-house").offset();
-    var barr = off.top; //начало блока
-    var off1 = $(".footer").offset();
-    var barr1 = off1.top; //конец блока
-
-    var top = $(document).scrollTop();
-    if (top > barr && top < barr1) {
-      var hei = $(document).scrollTop();
-      var mmmH = hei - barr; //высота для цветной картики
-      $(".mmm").css("height", mmmH);
-    }
-  });
-
+  
   //RULES
 
   let rulH = $(".rules__col").height();

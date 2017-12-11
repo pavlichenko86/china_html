@@ -512,10 +512,25 @@ p {
   bottom: -60px;
   left: 0;
 }
+.white-t{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background: #fff;
+  z-index: 1;
+  max-height: 150px;
+}
+.white-b{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background: #fff;
+  max-height: 150px;
+}
 .color__img {
-  width: 105%;
+  width: 100%;
   position: relative;
-  bottom: 80px;
+  bottom: 105px;
   left: -66%;
 }
 .mmm {
@@ -523,6 +538,8 @@ p {
   height: 0;
   margin: 0 auto;
   overflow: hidden;
+  position: relative;
+  top: 40px;
 }
 
 .house-links {
