@@ -20,20 +20,32 @@ $(document).ready(function() {
 
   $(window).scroll(function() {
     let winScrollT = $(this).scrollTop(); // высота прокрутки
-    console.log(winScrollT + "///" + hw);
+    //console.log(winScrollT + "///" + hw);
     let imgH = winScrollT - hw;
     let imgW = $('.black__img').width();
+    let hgh = imgH / 2;
+    console.log(hgh);
     $('.color__img').css('width', imgW);
     if (winScrollT > hw - 100) {
       $(".container-house").css("position", "fixed");
     }
-    $('.mmm').css('height', imgH + 'px');
-    $('.white').css('height', imgH + 'px');
-    console.log($('.color__img').height());
+    let mmmT = $('.mmm').css('top');
+    mmmT = parseInt(mmmT.replace(/\D+/g,""));
+    console.log(Number(mmmT));
+    if(hgh < 180 && hgh > 20){
+      $('.mmm').css('top', mmmT - 1);
+    }
+    let imgScr = $('.color__img').css('bottom');
+    imgScr = parseInt(imgScr.replace(/\D+/g,""));
+    if(hgh < 180 && hgh >= 0 && imgScr >= 65){
+      $('.color__img').css('bottom', imgScr - 1);
+    }
+    $('.mmm').css('height', hgh + 'px');
+    $('.white').css('height', hgh + 'px');
     let itH = $(".container-house").height();
     $(".house-links").css("height", itH * 2);
     $(".house-empty").css("height", itH);
-    console.log(itH * 2);
+    //console.log(itH * 2);
   });
 
   //BLOCK INFO NAMES
@@ -45,7 +57,7 @@ $(document).ready(function() {
   var scrollToElem = targetPos - winHeight;
   $(window).scroll(function() {
     var winScrollTop = $(this).scrollTop();
-    if (winScrollTop > scrollToElem) {
+    if (winScrollTop === scrollToElem) {
       funShow();
     }
   });
