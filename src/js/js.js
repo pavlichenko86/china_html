@@ -17,36 +17,32 @@ $(document).ready(function() {
 
   let winH = $(window).height(); //высота окна
   let toEl = hw - winH; //
-  console.log($('.block__info__title'));
+
   $(window).scroll(function() {
     let winScrollT = $(this).scrollTop(); // высота прокрутки
     let target = $(".block__info");
     let targetPos = target.offset().top;
-    console.log(winScrollT + ' /// ' + targetPos);
     if (winScrollT === targetPos) {
       funShow();
       $('.block__info__title').each(function(){
         $(this).removeAttr('id');
       });
     }
-    //console.log(winScrollT + "///" + hw);
     let imgH = winScrollT - hw;
     let imgW = $('.black__img').width();
     let hgh = imgH / 2;
-    console.log(hgh);
     $('.color__img').css('width', imgW);
     if (winScrollT > hw - 100) {
       $(".container-house").css("position", "fixed");
     }
     let mmmT = $('.mmm').css('top');
     mmmT = parseInt(mmmT.replace(/\D+/g,""));
-    console.log(Number(mmmT));
     if(hgh < 180 && hgh > 0){
       $('.mmm').css('top', mmmT - 1);
     }
     let imgScr = $('.color__img').css('bottom');
     imgScr = parseInt(imgScr.replace(/\D+/g,""));
-    if(hgh < 180 && hgh >= 0 && imgScr >= 65){
+    if(hgh < 180 && hgh >= 0 && imgScr >= 0){
       $('.color__img').css('bottom', imgScr - 1);
     }
     $('.mmm').css('height', hgh + 'px');
@@ -54,7 +50,6 @@ $(document).ready(function() {
     let itH = $(".container-house").height();
     $(".house-links").css("height", itH * 2);
     $(".house-empty").css("height", itH);
-    //console.log(itH * 2);
   });
 
   //BLOCK INFO NAMES
@@ -97,8 +92,6 @@ $(document).ready(function() {
       startDelay: 1000,
       showCursor: false
     });
-    //$(window).unbind('scroll.once')
-    // $(window).off("scroll");
   }
 
   //HOUSE

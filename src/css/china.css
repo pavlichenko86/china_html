@@ -549,28 +549,57 @@ p {
   padding-top: 400px;
 }
 .house-links__item1 {
+  display: block;
   position: absolute;
   height: auto;
   background: #fff;
   top: 15%;
   left: 15%;
   width: 250px;
+  -webkit-transition: all .5s;
+     -moz-transition: all .5s;
+      -ms-transition: all .5s;
+       -o-transition: all .5s;
+          transition: all .5s;
 }
 .house-links__item2 {
+  display: block;
   position: absolute;
   height: auto;
   background: #fff;
   top: 38%;
   left: 60%;
   width: 250px;
+  -webkit-transition: all .5s;
+     -moz-transition: all .5s;
+      -ms-transition: all .5s;
+       -o-transition: all .5s;
+          transition: all .5s;
 }
 .house-links__item3 {
+  display: block;
   position: absolute;
   height: auto;
   background: #fff;
   top: 57%;
   left: 12%;
   width: 250px;
+  -webkit-transition: all .5s;
+     -moz-transition: all .5s;
+      -ms-transition: all .5s;
+       -o-transition: all .5s;
+          transition: all .5s;
+}
+.house-links__item1:hover, .house-links__item2:hover, .house-links__item3:hover{
+  text-decoration: none;
+  transform: scale(1.1);
+  -webkit-transition: all .5s;
+     -moz-transition: all .5s;
+      -ms-transition: all .5s;
+       -o-transition: all .5s;
+          transition: all .5s;
+  -webkit-box-shadow: 1px 1px 12px 2px rgba(0,0,0,0.5);
+  box-shadow: 1px 1px 12px 2px rgba(0,0,0,0.5);
 }
 .house-links1__img {
   height: 190px;
