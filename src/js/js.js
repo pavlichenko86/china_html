@@ -17,9 +17,18 @@ $(document).ready(function() {
 
   let winH = $(window).height(); //высота окна
   let toEl = hw - winH; //
-
+  console.log($('.block__info__title'));
   $(window).scroll(function() {
     let winScrollT = $(this).scrollTop(); // высота прокрутки
+    let target = $(".block__info");
+    let targetPos = target.offset().top;
+    console.log(winScrollT + ' /// ' + targetPos);
+    if (winScrollT === targetPos) {
+      funShow();
+      $('.block__info__title').each(function(){
+        $(this).removeAttr('id');
+      });
+    }
     //console.log(winScrollT + "///" + hw);
     let imgH = winScrollT - hw;
     let imgW = $('.black__img').width();
@@ -32,7 +41,7 @@ $(document).ready(function() {
     let mmmT = $('.mmm').css('top');
     mmmT = parseInt(mmmT.replace(/\D+/g,""));
     console.log(Number(mmmT));
-    if(hgh < 180 && hgh > 20){
+    if(hgh < 180 && hgh > 0){
       $('.mmm').css('top', mmmT - 1);
     }
     let imgScr = $('.color__img').css('bottom');
@@ -49,18 +58,6 @@ $(document).ready(function() {
   });
 
   //BLOCK INFO NAMES
-
-  // по скролу
-  var target = $(".block__info__title");
-  var targetPos = target.offset().top;
-  var winHeight = $(window).height();
-  var scrollToElem = targetPos - winHeight;
-  $(window).scroll(function() {
-    var winScrollTop = $(this).scrollTop();
-    if (winScrollTop === scrollToElem) {
-      funShow();
-    }
-  });
 
   function funShow() {
     var typed = new Typed("#title1", {
@@ -100,7 +97,8 @@ $(document).ready(function() {
       startDelay: 1000,
       showCursor: false
     });
-    //$(window).off("scroll");
+    //$(window).unbind('scroll.once')
+    // $(window).off("scroll");
   }
 
   //HOUSE
