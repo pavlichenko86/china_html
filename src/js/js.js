@@ -25,7 +25,7 @@ $(document).ready(function() {
     if (winScrollT === targetPos) {
       funShow();
       $('.block__info__title').each(function(){
-        $(this).removeAttr('id');
+        $(this).attr('id', 'dfd');
       });
     }
     let imgH = winScrollT - hw;
@@ -42,7 +42,7 @@ $(document).ready(function() {
     }
     let imgScr = $('.color__img').css('bottom');
     imgScr = parseInt(imgScr.replace(/\D+/g,""));
-    if(hgh < 180 && hgh >= 0 && imgScr >= 0){
+    if(hgh < 180 && hgh >= 0 && imgScr >= 65){
       $('.color__img').css('bottom', imgScr - 1);
     }
     $('.mmm').css('height', hgh + 'px');
