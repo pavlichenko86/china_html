@@ -203,13 +203,13 @@ p {
   text-align: center;
   position: relative;
 }
-.thai-map{
+.thai-map {
   padding-top: 30px;
 }
 .china-map__map {
   width: 200px;
 }
-.thai-map__map{
+.thai-map__map {
   height: 200px;
 }
 .china-map__name {
@@ -240,7 +240,7 @@ p {
 .china-photo__left {
   position: absolute;
   bottom: 0;
-  width: 35%;
+  width: 54%;
   height: 100%;
   z-index: 1;
 }
@@ -267,7 +267,7 @@ p {
   height: 100%;
   z-index: 1;
 }
-.china-photo__right {
+.thai-photo__right {
   width: 27%;
 }
 
@@ -290,7 +290,7 @@ p {
   min-height: 620px;
   background: url(../img/china/bg-info.jpg) no-repeat 46% 35%;
 }
-.thai-block__info{
+.thai-block__info {
   background: url(../img/thailand/bg-info.jpg) no-repeat 46% 35%;
 }
 .info_wrapper {
@@ -370,7 +370,7 @@ p {
   background: url(../img/china/bg-places.jpg) no-repeat 0 25%;
   background-size: cover;
 }
-.thai-block__places{
+.thai-block__places {
   background: url(../img/thailand/bg-places.jpg) no-repeat 0 45%;
 }
 .block__places__shadow {
@@ -398,10 +398,6 @@ p {
   min-height: 310px;
   transition: all 0.5s;
 }
-.block__places__item:hover {
-  transform: scale(1.2);
-  transition: all 0.5s;
-}
 .places-1 {
   width: 100%;
 }
@@ -412,9 +408,22 @@ p {
   width: 74%;
   height: 83%;
   background: url(../img/china/places-1.jpg) no-repeat 20% 75%;
+  transition: all 0.5s;
 }
-.thai-places__img__wrap1{
+.thai-places__img__wrap1 {
   background: url(../img/thailand/places-1.jpg) no-repeat 63% 75%;
+  transition: all 0.5s;
+}
+.places__img__wrap1:hover,
+.places__img__wrap2:hover,
+.places__img__wrap3:hover,
+.places__img__wrap4:hover,
+.thai-places__img__wrap2:hover,
+.thai-places__img__wrap3:hover,
+.thai-places__img__wrap4:hover,
+.thai-places__img__wrap1:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
 }
 .places__name1 {
   position: absolute;
@@ -447,9 +456,11 @@ p {
   width: 78%;
   height: 57%;
   background: url(../img/china/places-2.jpg) no-repeat 20% 45%;
+  transition: all 0.5s;
 }
 .thai-places__img__wrap2 {
   background: url(../img/thailand/places-2.jpg) no-repeat 20% 45%;
+  transition: all 0.5s;
 }
 .places__name2 {
   position: absolute;
@@ -469,6 +480,7 @@ p {
   width: 66%;
   height: 70%;
   background: url(../img/china/places-3.jpg) no-repeat 20%;
+  transition: all 0.5s;
 }
 .thai-places__img__wrap3 {
   background: url(../img/thailand/places-3.jpg) no-repeat 20%;
@@ -491,6 +503,7 @@ p {
   width: 98%;
   height: 67%;
   background: url(../img/china/places-4.jpg) no-repeat 0 35%;
+  transition: all 0.5s;
 }
 .thai-places__img__wrap4 {
   background: url(../img/thailand/places-4.jpg) no-repeat 0 35%;
@@ -546,7 +559,7 @@ p {
   bottom: -60px;
   left: 0;
 }
-.white-t{
+.white-t {
   position: absolute;
   width: 100%;
   top: 0;
@@ -554,7 +567,7 @@ p {
   z-index: 1;
   max-height: 150px;
 }
-.white-b{
+.white-b {
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -590,11 +603,11 @@ p {
   top: 15%;
   left: 15%;
   width: 250px;
-  -webkit-transition: all .5s;
-     -moz-transition: all .5s;
-      -ms-transition: all .5s;
-       -o-transition: all .5s;
-          transition: all .5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .house-links__item2 {
   display: block;
@@ -604,11 +617,11 @@ p {
   top: 38%;
   left: 60%;
   width: 250px;
-  -webkit-transition: all .5s;
-     -moz-transition: all .5s;
-      -ms-transition: all .5s;
-       -o-transition: all .5s;
-          transition: all .5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .house-links__item3 {
   display: block;
@@ -618,22 +631,24 @@ p {
   top: 57%;
   left: 12%;
   width: 250px;
-  -webkit-transition: all .5s;
-     -moz-transition: all .5s;
-      -ms-transition: all .5s;
-       -o-transition: all .5s;
-          transition: all .5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
-.house-links__item1:hover, .house-links__item2:hover, .house-links__item3:hover{
+.house-links__item1:hover,
+.house-links__item2:hover,
+.house-links__item3:hover {
   text-decoration: none;
   transform: scale(1.1);
-  -webkit-transition: all .5s;
-     -moz-transition: all .5s;
-      -ms-transition: all .5s;
-       -o-transition: all .5s;
-          transition: all .5s;
-  -webkit-box-shadow: 1px 1px 12px 2px rgba(0,0,0,0.5);
-  box-shadow: 1px 1px 12px 2px rgba(0,0,0,0.5);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-box-shadow: 1px 1px 12px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 12px 2px rgba(0, 0, 0, 0.5);
 }
 .house-links1__img {
   height: 190px;
@@ -644,7 +659,7 @@ p {
   background: url(../img/thailand/hotels/hotel1.jpg) no-repeat;
   height: 190px;
   background-size: cover;
-  }
+}
 .house-links2__img {
   height: 190px;
   background: url(../img/china/hotels/hotel1.jpg) no-repeat;
@@ -652,9 +667,9 @@ p {
 }
 .house-links2__img--thai {
   background: url(../img/thailand/hotels/hotel2.jpg) no-repeat;
-height: 190px;
+  height: 190px;
   background-size: cover;
-  }
+}
 .house-links3__img {
   height: 190px;
   background: url(../img/china/hotels/hotel3.jpg) no-repeat;
@@ -662,9 +677,9 @@ height: 190px;
 }
 .house-links3__img--thai {
   background: url(../img/thailand/hotels/hotel3.jpg) no-repeat;
-height: 190px;
+  height: 190px;
   background-size: cover;
-  }
+}
 .house-links__name {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -709,7 +724,7 @@ height: 190px;
   background: url(../img/china/bg-rules.jpg) no-repeat 0 70%;
   background-size: cover;
 }
-.container-rules--thai{
+.container-rules--thai {
   background: url(../img/thailand/bg-rules.jpg) no-repeat 0 17%;
   background-size: cover;
 }
@@ -812,7 +827,7 @@ height: 190px;
   background: url(../img/china/bg-video.jpg) no-repeat 0 70%;
   background-size: cover;
 }
-.china-video-wrap--thai{
+.china-video-wrap--thai {
   background: url(../img/thailand/bg-video.jpg) no-repeat 0 70%;
   background-size: cover;
 }
