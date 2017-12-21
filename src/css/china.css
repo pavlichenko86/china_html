@@ -637,9 +637,24 @@ p {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
+.house-links__item4 {
+  display: block;
+  position: absolute;
+  height: auto;
+  background: #fff;
+  top: 57%;
+  left: 12%;
+  width: 250px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
 .house-links__item1:hover,
 .house-links__item2:hover,
-.house-links__item3:hover {
+.house-links__item3:hover,
+.house-links__item4:hover {
   text-decoration: none;
   transform: scale(1.1);
   -webkit-transition: all 0.5s;
@@ -676,6 +691,16 @@ p {
   background-size: cover;
 }
 .house-links3__img--thai {
+  background: url(../img/thailand/hotels/hotel3.jpg) no-repeat;
+  height: 190px;
+  background-size: cover;
+}
+.house-links4__img {
+  height: 190px;
+  background: url(../img/china/hotels/hotel3.jpg) no-repeat;
+  background-size: cover;
+}
+.house-links4__img--thai {
   background: url(../img/thailand/hotels/hotel3.jpg) no-repeat;
   height: 190px;
   background-size: cover;

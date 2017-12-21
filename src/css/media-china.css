@@ -167,6 +167,39 @@
     height: auto;
   }
   /*--------------*/
+
+  /*----house----*/
+  .house-items,
+  .house-empty {
+    display: none;
+  }
+  .house-links {
+    height: auto;
+    padding-top: 0;
+    background: url(../img/china/bg-house.jpg) no-repeat 69% 26%;
+    background-size: cover;
+  }
+  .house-links--thai {
+    background: url(../img/thailand/bg-pool.jpg) no-repeat 48% 26%;
+    background-size: cover;
+  }
+  .row--house {
+    padding: 10px 0;
+    background: rgba(255, 255, 255, 0.65);
+  }
+  .house-links__item1,
+  .house-links__item2,
+  .house-links__item3,
+  .house-links__item4 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 74%;
+    margin: 15px auto;
+    padding: 0;
+  }
+  /*-------------*/
+
   /*container-rules*/
   .container-rules {
     height: auto;
@@ -449,6 +482,44 @@
     height: auto;
   }
   /*--------------*/
+
+  /*----house----*/
+  .house-items,
+  .house-empty {
+    display: none;
+  }
+  .house-links {
+    height: auto;
+    padding-top: 0;
+    background: url(../img/china/bg-house.jpg) no-repeat 69% 26%;
+    background-size: cover;
+  }
+  .house-links--thai {
+    background: url(../img/thailand/bg-pool.jpg) no-repeat 50% 17%;
+    background-size: cover;
+  }
+  .row--house {
+    padding: 10px 0;
+    background: rgba(255, 255, 255, 0.65);
+  }
+  .house-links__item1,
+  .house-links__item2,
+  .house-links__item3,
+  .house-links__item4 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 74%;
+    margin: 20px auto;
+    padding: 0;
+  }
+  .house-links__info {
+    width: 100%;
+    margin-left: 0;
+    padding: 10px 0 20px 93px;
+  }
+  /*-------------*/
+
   /*container-rules*/
   .container-rules {
     height: auto;
@@ -584,7 +655,7 @@
     position: relative;
     top: 40px;
     margin: 0 auto;
-    width: 74%;
+    width: 60%;
     height: 83%;
     background-size: cover;
   }
@@ -611,6 +682,44 @@
     height: auto;
   }
   /*--------------*/
+
+  /*----house----*/
+  .house-items,
+  .house-empty {
+    display: none;
+  }
+  .house-links {
+    height: auto;
+    padding-top: 0;
+    background: url(../img/china/bg-house.jpg) no-repeat 69% 26%;
+    background-size: cover;
+  }
+  .house-links--thai {
+    background: url(../img/thailand/bg-pool.jpg) no-repeat 50% 17%;
+    background-size: cover;
+  }
+  .row--house {
+    padding: 10px 0;
+    background: rgba(255, 255, 255, 0.65);
+  }
+  .house-links__item1,
+  .house-links__item2,
+  .house-links__item3,
+  .house-links__item4 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 60%;
+    margin: 20px auto;
+    padding: 0;
+  }
+  .house-links__info {
+    width: 100%;
+    margin-left: 0;
+    padding: 10px 0 20px 93px;
+  }
+  /*-------------*/
+
   /*container-rules*/
   .container-rules {
     height: auto;
@@ -746,6 +855,69 @@
     height: 50%;
   }
   /*---------------*/
+
+  /*----house----*/
+  .house-items,
+  .house-empty {
+    display: none;
+  }
+  .house-links {
+    height: auto;
+    padding-top: 0;
+    background: url(../img/china/bg-house.jpg) no-repeat 69% 26%;
+    background-size: cover;
+  }
+  .house-links--thai {
+    background: url(../img/thailand/bg-pool.jpg) no-repeat 50% 17%;
+    background-size: cover;
+  }
+  .row--house {
+    padding: 10px 0 20px;
+    background: rgba(255, 255, 255, 0.65);
+  }
+  .house-links__item1,
+  .house-links__item2,
+  .house-links__item3,
+  .house-links__item4 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50%;
+    margin: 20px auto;
+    padding: 0;
+    background: none;
+  }
+  .house-item__wrap {
+    width: 90%;
+    margin: 0 auto;
+    background: #fff;
+  }
+  .house-links__info {
+    width: 100%;
+    margin-left: 0;
+    padding: 10px 0 20px;
+    text-align: center;
+  }
+  .house-links__name {
+    font-size: 23px;
+  }
+  .house-links__city {
+    font-size: 20px;
+  }
+  .house-links__more {
+    position: relative;
+    top: 25px;
+    left: 0;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .house-links__descr {
+    background: #fff;
+    width: 90%;
+    margin: 0 auto;
+  }
+  /*-------------*/
 
   /*container-rules*/
 

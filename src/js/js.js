@@ -29,7 +29,7 @@ $(document).ready(function() {
 
   let winH = $(window).height(); //высота окна
   let toEl = hw - winH;
-  if (client_w >= 1300) {
+  if (client_w >= 1024) {
     $(window).scroll(function() {
       let winScrollT = $(this).scrollTop(); // высота прокрутки
       let target = $(".container-info");
@@ -39,6 +39,8 @@ $(document).ready(function() {
       let imgW = $(".black__img").width();
       let hgh = imgH / 2;
       $(".color__img").css("width", imgW);
+      let leftColImg = (imgW - 485) / 2;
+      $(".color__img").css("left", -leftColImg);
       if (winScrollT > hw - 30) {
         $(".container-house").css("position", "fixed");
       } else if (winScrollT < hw) {
