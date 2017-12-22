@@ -577,8 +577,7 @@ p {
 .color__img {
   width: 100%;
   position: relative;
-  bottom: 105px;
-  left: -66%;
+  bottom: 0;
 }
 .mmm {
   width: 485px;
@@ -600,7 +599,8 @@ p {
   position: absolute;
   height: auto;
   background: #fff;
-  top: 15%;
+  padding: 0;
+  top: 6%;
   left: 15%;
   width: 250px;
   -webkit-transition: all 0.5s;
@@ -614,7 +614,8 @@ p {
   position: absolute;
   height: auto;
   background: #fff;
-  top: 38%;
+  padding: 0;
+  top: 17%;
   left: 60%;
   width: 250px;
   -webkit-transition: all 0.5s;
@@ -628,6 +629,7 @@ p {
   position: absolute;
   height: auto;
   background: #fff;
+  padding: 0;
   top: 57%;
   left: 12%;
   width: 250px;
@@ -642,8 +644,9 @@ p {
   position: absolute;
   height: auto;
   background: #fff;
+  padding: 0;
   top: 57%;
-  left: 12%;
+  left: 57%;
   width: 250px;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;

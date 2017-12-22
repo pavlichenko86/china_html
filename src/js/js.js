@@ -34,6 +34,11 @@ $(document).ready(function() {
       let winScrollT = $(this).scrollTop(); // высота прокрутки
       let target = $(".container-info");
       let targetPos = target.offset().top;
+      let blackTop = $(".black__img").offset();
+      let colorTop = $(".color__img").offset();
+      console.log(blackTop.top);
+      $(".color__img").offset({ top: blackTop.top });
+      console.log($(".mmm").offset());
 
       let imgH = winScrollT - hw; //прокрутка - расстояние до верха
       let imgW = $(".black__img").width();
@@ -51,11 +56,11 @@ $(document).ready(function() {
       if (hgh < 180 && hgh > 0 && mmmT >= 1) {
         $(".mmm").css("top", mmmT - 1);
       }
-      let imgScr = $(".color__img").css("bottom");
-      imgScr = parseInt(imgScr.replace(/\D+/g, ""));
-      if (hgh < 180 && hgh >= 0 && imgScr >= 65) {
-        $(".color__img").css("bottom", imgScr - 1);
-      }
+      // let imgScr = $(".color__img").css("bottom");
+      // imgScr = parseInt(imgScr.replace(/\D+/g, ""));
+      // if (hgh < 180 && hgh >= 0 && imgScr >= 65) {
+      //   $(".color__img").css("bottom", imgScr - 1);
+      // }
       $(".mmm").css("height", hgh + "px");
       $(".white").css("height", hgh + "px");
       let itH = $(".container-house").height();
