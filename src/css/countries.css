@@ -1,0 +1,1079 @@
+@font-face {
+  font-family: "SegoeUILight";
+  src: url("../font/SegoeUILight/SegoeUILight.eot");
+  src: url("../font/SegoeUILight/SegoeUILight.eot?#iefix")
+      format("embedded-opentype"),
+    url("../font/SegoeUILight/SegoeUILight.woff") format("woff"),
+    url("../font/SegoeUILight/SegoeUILight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "SegoeUIRegular";
+  src: url("../font/SegoeUIRegular/SegoeUIRegular.eot");
+  src: url("../font/SegoeUIRegular/SegoeUIRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../font/SegoeUIRegular/SegoeUIRegular.woff") format("woff"),
+    url("../font/fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "SegoeUIBold";
+  src: url("../font/SegoeUIBold/SegoeUIBold.eot");
+  src: url("../font/SegoeUIBold/SegoeUIBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../font/SegoeUIBold/SegoeUIBold.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "SegoeUISemiBold";
+  src: url("../font/SegoeUISemiBold/SegoeUISemiBold.eot");
+  src: url("../font/SegoeUISemiBold/SegoeUISemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../font/SegoeUISemiBold/SegoeUISemiBold.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font494772733b824fa9084757b082533610";
+  src: url("https://nomail.com.ua/files/eot/494772733b824fa9084757b082533610.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://nomail.com.ua/files/woff/494772733b824fa9084757b082533610.woff")
+      format("woff"),
+    url("https://nomail.com.ua/files/woff2/494772733b824fa9084757b082533610.woff2")
+      format("woff2");
+}
+@font-face {
+  font-family: "SegoeUI-Italic";
+  src: local("SegoeUI-Italic"),
+    url("https://nomail.com.ua/files/woff/494772733b824fa9084757b082533610.woff")
+      format("woff");
+}
+#segoeuiitalic {
+  font-family: "SegoeUI-Italic";
+}
+.font494772733b824fa9084757b082533610 {
+  font-family: "font494772733b824fa9084757b082533610";
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body,
+html {
+  height: 578px;
+  font-weight: 100;
+}
+/*remove margin*/
+p {
+  margin: 0;
+}
+/*---HEADER----*/
+.container__ch {
+  position: relative;
+  z-index: 1;
+  height: auto;
+  width: 100%;
+  left: 0;
+  -webkit-transition: left 0.4s ease-in-out;
+  -moz-transition: left 0.4s ease-in-out;
+  -ms-transition: left 0.4s ease-in-out;
+  -o-transition: left 0.4s ease-in-out;
+  transition: left 0.4s ease-in-out;
+}
+.container__ch .open-sidebar {
+  left: 0;
+  z-index: 5;
+  transition: 0.5s linear;
+}
+.wrap-main nav.toLeft {
+  left: 300px;
+  transition: all 0.5s linear;
+}
+.wrap-main__nav,
+.sidebar__link {
+  transition: all 0.5s linear;
+}
+.menu__block {
+  display: block;
+  transition: all 0.1s linear;
+  text-align: center;
+  width: 150px;
+}
+.nav__link {
+  transition: all 0.1s linear;
+}
+.wrap-main .link-toLeft {
+  left: 240px !important;
+  transition: all 0.5s linear;
+}
+#sidebar {
+  position: absolute;
+  background: #15202b;
+  width: 240px;
+  height: 100%;
+  box-sizing: border-box;
+}
+.sidebar__hide {
+  transition: all 0.5s linear;
+  left: -240px;
+}
+#sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#sidebar ul li {
+  margin: 0;
+}
+#sidebar ul li a {
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 100;
+  color: white;
+  text-decoration: none;
+  display: block;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  -ms-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  font-family: "SegoeUIRegular";
+}
+#sidebar ul li:hover a {
+  background: #1dd2af;
+}
+.main-content {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  padding: 0px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: relative;
+  background: url(../img/thailand/bg-first.jpg) no-repeat;
+  background-size: cover;
+}
+.main-content nav {
+  position: absolute;
+  padding: 15px 10px 15px 20px;
+  background: #2d3e50;
+  left: 60px;
+  z-index: 7;
+}
+.main-content nav .ol {
+  display: none !important;
+}
+.main-content nav a {
+  color: #fff;
+  padding: 20px;
+  text-transform: uppercase;
+  font-family: "SegoeUISemiBold";
+}
+.main-content nav a:hover {
+  color: #1fd3b0;
+}
+.main-content #sidebar-toggle {
+  background: #2d3e50;
+  display: block;
+  position: absolute;
+  padding: 20px 10px 17px 20px;
+  left: 0;
+  top: 0;
+  z-index: 7;
+}
+.main-content #sidebar-toggle .bar {
+  display: block;
+  width: 30px;
+  margin-bottom: 5px;
+  height: 1px;
+  background-color: #fff;
+  border-radius: 1px;
+}
+.main-content #sidebar-toggle .bar:last-child {
+  margin-bottom: 0;
+}
+.china-map {
+  margin: 0 auto;
+  padding-top: 55px;
+  text-align: center;
+  position: relative;
+}
+.thai-map {
+  padding-top: 30px;
+}
+.china-map__map {
+  width: 200px;
+}
+.thai-map__map {
+  height: 200px;
+}
+.china-map__name {
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+  padding-top: 5px;
+}
+.china-map__trans {
+  color: #000;
+  font-size: 25px;
+}
+.china-map__descr {
+  font-family: "RobotoLight", sans-serif;
+  font-size: 22px;
+  color: #000;
+  padding-top: 5px;
+}
+.china-photo {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  bottom: 0;
+  overflow: hidden;
+}
+.china-photo__left {
+  position: absolute;
+  bottom: 0;
+  width: 54%;
+  height: 100%;
+  z-index: 1;
+}
+.thai-photo__left {
+  width: 35%;
+}
+.china-photo__center {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  width: 20%;
+  height: 100%;
+  z-index: 2;
+}
+.thai-photo__center {
+  left: 32%;
+  width: 46%;
+}
+.china-photo__right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 44%;
+  height: 100%;
+  z-index: 1;
+}
+.thai-photo__right {
+  width: 27%;
+}
+
+.china-photo__xram,
+.china-photo__soldiers,
+.china-photo__wall {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/*---BLOCK - INFO--------*/
+.container-info {
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+.block__info {
+  height: 100vh;
+  min-height: 620px;
+  background: url(../img/china/bg-info.jpg) no-repeat 46% 35%;
+}
+.thai-block__info {
+  background: url(../img/thailand/bg-info.jpg) no-repeat 46% 35%;
+}
+.info_wrapper {
+  height: 100%;
+  padding: 0;
+  padding: 50px 30px 70px;
+  background: #fff;
+  position: relative;
+}
+.info_wrapper__line {
+  width: 4px;
+  height: 165px;
+  position: absolute;
+  top: 0;
+  left: 33px;
+  background: #2d3e50;
+}
+.info_wrapper__line-green {
+  width: 3px;
+  height: 52px;
+  position: absolute;
+  top: 0;
+  left: 43px;
+  background: #1dd2af;
+}
+.block__info__text {
+  padding: 0 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  color: #575757;
+  font-weight: 500;
+  text-align: justify;
+}
+.block__info__item {
+  text-align: center;
+  padding-top: 40px;
+}
+.block__info__title {
+  color: #0daa8d;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+.block__info__subtitle {
+  color: #2d3e50;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+.block__info__name {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.block__info__subname {
+  color: #2d3e50;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+.typed-cursor {
+  display: none;
+}
+
+/*----BLOCK -PLACES------------*/
+.container-places {
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.block__places {
+  height: 100vh;
+  min-height: 620px;
+  background: url(../img/china/bg-places.jpg) no-repeat 0 25%;
+  background-size: cover;
+}
+.thai-block__places {
+  background: url(../img/thailand/bg-places.jpg) no-repeat 0 45%;
+}
+.block__places__shadow {
+  height: 100vh;
+  min-height: 620px;
+  background: rgba(45, 62, 80, 0.7);
+}
+.block__places__line {
+  position: absolute;
+  left: calc(50% - 270px);
+  height: 100vh;
+  min-height: 620px;
+  width: 380px;
+  background: url(../img/china/places-line.png) no-repeat;
+  background-size: contain;
+}
+.places_wrapper {
+  height: 100%;
+  position: relative;
+}
+.block__places__item {
+  position: relative;
+  padding: 0;
+  height: 50vh;
+  min-height: 310px;
+  transition: all 0.5s;
+}
+.places-1 {
+  width: 100%;
+}
+.places__img__wrap1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 74%;
+  height: 83%;
+  background: url(../img/china/places-1.jpg) no-repeat 20% 75%;
+  transition: all 0.5s;
+}
+.thai-places__img__wrap1 {
+  background: url(../img/thailand/places-1.jpg) no-repeat 63% 75%;
+  transition: all 0.5s;
+}
+.places__img__wrap1:hover,
+.places__img__wrap2:hover,
+.places__img__wrap3:hover,
+.places__img__wrap4:hover,
+.thai-places__img__wrap2:hover,
+.thai-places__img__wrap3:hover,
+.thai-places__img__wrap4:hover,
+.thai-places__img__wrap1:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+.places__name1 {
+  position: absolute;
+  bottom: 13px;
+  right: -25px;
+  padding: 13px 10px;
+  background: #00d3af;
+  color: #fefefe;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 19px;
+}
+.famous__places {
+  position: absolute;
+  width: auto;
+  top: 20px;
+  right: 0;
+  padding: 10px 15px;
+  background: #fefefe;
+  color: #00d3af;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.places__img__wrap2 {
+  position: absolute;
+  right: 0;
+  bottom: -18px;
+  width: 78%;
+  height: 57%;
+  background: url(../img/china/places-2.jpg) no-repeat 20% 45%;
+  transition: all 0.5s;
+}
+.thai-places__img__wrap2 {
+  background: url(../img/thailand/places-2.jpg) no-repeat 20% 45%;
+  transition: all 0.5s;
+}
+.places__name2 {
+  position: absolute;
+  top: 13px;
+  left: -25px;
+  padding: 13px 10px;
+  background: #00d3af;
+  color: #fefefe;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 19px;
+}
+.places__img__wrap3 {
+  position: absolute;
+  left: 0;
+  top: 10%;
+  width: 66%;
+  height: 70%;
+  background: url(../img/china/places-3.jpg) no-repeat 20%;
+  transition: all 0.5s;
+}
+.thai-places__img__wrap3 {
+  background: url(../img/thailand/places-3.jpg) no-repeat 20%;
+}
+.places__name3 {
+  position: absolute;
+  bottom: 13px;
+  right: -25px;
+  padding: 13px 10px;
+  background: #00d3af;
+  color: #fefefe;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 19px;
+}
+.places__img__wrap4 {
+  position: absolute;
+  right: 0;
+  top: 26%;
+  width: 98%;
+  height: 67%;
+  background: url(../img/china/places-4.jpg) no-repeat 0 35%;
+  transition: all 0.5s;
+}
+.thai-places__img__wrap4 {
+  background: url(../img/thailand/places-4.jpg) no-repeat 0 35%;
+}
+.places__name4 {
+  position: absolute;
+  top: 13px;
+  left: -25px;
+  padding: 13px 10px;
+  background: #00d3af;
+  color: #fefefe;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 19px;
+}
+
+/*----BLOCK-HOUSE-----------*/
+.house-items {
+  position: relative;
+  height: auto;
+}
+.container-house {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  min-height: 620px;
+  background: #fff;
+  padding: 60px 0;
+}
+.house_wrapper {
+  height: 100%;
+  position: relative;
+}
+.black__wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  filter: grayscale(90%);
+  overflow: hidden;
+}
+.color__wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.black__img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+}
+.white-t {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background: #fff;
+  z-index: 1;
+  max-height: 150px;
+}
+.white-b {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background: #fff;
+  max-height: 150px;
+}
+.color__img {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+.mmm {
+  width: 485px;
+  height: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  top: 40px;
+}
+
+.house-links {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  padding-top: 400px;
+}
+.house-links__item1 {
+  display: block;
+  position: absolute;
+  height: auto;
+  background: #fff;
+  padding: 0;
+  top: 6%;
+  left: 15%;
+  width: 250px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.house-links__item2 {
+  display: block;
+  position: absolute;
+  height: auto;
+  background: #fff;
+  padding: 0;
+  top: 17%;
+  left: 60%;
+  width: 250px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.house-links__item3 {
+  display: block;
+  position: absolute;
+  height: auto;
+  background: #fff;
+  padding: 0;
+  top: 57%;
+  left: 12%;
+  width: 250px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.house-links__item4 {
+  display: block;
+  position: absolute;
+  height: auto;
+  background: #fff;
+  padding: 0;
+  top: 57%;
+  left: 57%;
+  width: 250px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.house-links__item1:hover,
+.house-links__item2:hover,
+.house-links__item3:hover,
+.house-links__item4:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-box-shadow: 1px 1px 12px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 12px 2px rgba(0, 0, 0, 0.5);
+}
+.house-links1__img {
+  height: 190px;
+  background: url(../img/china/hotels/hotel1.jpg) no-repeat;
+  background-size: cover;
+}
+.house-links1__img--thai {
+  background: url(../img/thailand/hotels/hotel1.jpg) no-repeat;
+  height: 190px;
+  background-size: cover;
+}
+.house-links2__img {
+  height: 190px;
+  background: url(../img/china/hotels/hotel1.jpg) no-repeat;
+  background-size: cover;
+}
+.house-links2__img--thai {
+  background: url(../img/thailand/hotels/hotel2.jpg) no-repeat;
+  height: 190px;
+  background-size: cover;
+}
+.house-links3__img {
+  height: 190px;
+  background: url(../img/china/hotels/hotel3.jpg) no-repeat;
+  background-size: cover;
+}
+.house-links3__img--thai {
+  background: url(../img/thailand/hotels/hotel3.jpg) no-repeat;
+  height: 190px;
+  background-size: cover;
+}
+.house-links4__img {
+  height: 190px;
+  background: url(../img/china/hotels/hotel3.jpg) no-repeat;
+  background-size: cover;
+}
+.house-links4__img--thai {
+  background: url(../img/thailand/hotels/hotel3.jpg) no-repeat;
+  height: 190px;
+  background-size: cover;
+}
+.house-links__name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: #344b62;
+  text-align: center;
+}
+.house-links__city {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: #344b62;
+  text-align: center;
+}
+.house-links__descr {
+  position: relative;
+}
+.house-links__info {
+  font-size: 14px;
+  width: 160px;
+  margin-left: 93px;
+  padding: 10px 0 20px;
+}
+.house-links__more {
+  position: absolute;
+  top: 0;
+  left: -30px;
+  padding: 15px 10px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  background: #00d3af;
+}
+
+/*----CONTAINER-RULES----------*/
+.container-rules {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  min-height: 620px;
+  background: url(../img/china/bg-rules.jpg) no-repeat 0 70%;
+  background-size: cover;
+}
+.container-rules--thai {
+  background: url(../img/thailand/bg-rules.jpg) no-repeat 0 17%;
+  background-size: cover;
+}
+.rules__left {
+  background: #18334a;
+  opacity: 0.75;
+  position: relative;
+  padding: 0 0 30px;
+}
+.rules__right {
+  background: #fff;
+  opacity: 0.75;
+  position: relative;
+  padding: 0 0 30px;
+}
+.rules__item {
+  padding: 0;
+  padding: 25px 0 30px;
+}
+.rules__all {
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  padding: 20px 35px;
+  position: relative;
+  width: calc(100% + 30px);
+}
+.rules__col {
+  text-align: center;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+.rules__col-right {
+  color: #1d3348;
+}
+.rules__col img {
+  margin: 0 auto;
+  width: 80px;
+}
+.rules__fig {
+  margin-top: 15px;
+}
+.rules__first {
+  margin-top: 30px;
+}
+.rules__all-right {
+  color: #fff;
+  background: #1d3348;
+  left: -30px;
+}
+.rules__all-left {
+  color: #1d3348;
+  background: #fff;
+  text-align: right;
+}
+
+/*----VIDEO----*/
+.container-video {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  min-height: 620px;
+}
+.china-video-title {
+  height: 60px;
+  padding-left: 100px;
+  line-height: 60px;
+  background: #fff;
+  color: #00d3af;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-transform: uppercase;
+  position: relative;
+}
+.china-title-wrap {
+  height: 60px;
+  background: #1d3348;
+}
+.video__line {
+  width: 4px;
+  height: 70%;
+  background: #293d52;
+  position: absolute;
+  top: 0;
+  left: 40px;
+}
+.video__line2 {
+  width: 2px;
+  height: 40%;
+  background: #00d3af;
+  position: absolute;
+  top: 0;
+  left: 50px;
+}
+.china-video-wrap {
+  height: 100%;
+  background: url(../img/china/bg-video.jpg) no-repeat 0 70%;
+  background-size: cover;
+}
+.china-video-wrap--thai {
+  background: url(../img/thailand/bg-video.jpg) no-repeat 0 70%;
+  background-size: cover;
+}
+.china-video-shadow {
+  height: 100%;
+  background: rgba(24, 51, 74, 0.75);
+}
+.china-video-main {
+  padding: 50px 0;
+  text-align: center;
+}
+.other-country {
+  display: inline-block;
+  padding: 15px 31px;
+  margin: 15px auto 0;
+  background: #00d3af;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.other-country:hover {
+  color: #fff;
+  text-decoration: none;
+  -webkit-box-shadow: 10px 7px 13px -5px rgba(55, 124, 158, 1);
+  -moz-box-shadow: 10px 7px 13px -5px rgba(55, 124, 158, 1);
+  box-shadow: 10px 7px 13px -5px rgba(55, 124, 158, 1);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+/*----FOOTER----*/
+.footer-block {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+  background: #2d3e50;
+  position: relative;
+  padding-bottom: 20px;
+}
+.footer-block .footer {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.footer-block .footer .footer-logo {
+  width: 25%;
+  text-align: center;
+  padding-top: 40px;
+  float: left;
+}
+.footer-block .footer .footer-logo img {
+  width: 200px;
+}
+.footer-block .footer .footer-logo p {
+  font-family: serif;
+  color: #1dd2af;
+  font-size: 26px;
+  padding: 25px 0px 10px 0px;
+}
+.footer-block .footer .footer-logo form input {
+  padding: 12px;
+  border: none;
+}
+.footer-block .footer .footer-logo form button {
+  background: #1dd2af;
+  border: none;
+  padding: 8px 10px;
+  position: relative;
+  top: 4px;
+}
+.footer-block .footer .footer-logo form button i {
+  color: #fff;
+}
+.footer-block .footer .footer-news {
+  width: 25%;
+  text-align: center;
+  padding-top: 40px;
+  float: left;
+}
+.footer-block .footer .footer-news p {
+  font-family: serif;
+  color: #1dd2af;
+  font-size: 28px;
+}
+.footer-block .footer .footer-news .first-news {
+  text-align: left;
+  margin-top: 30px;
+  border: 1px solid #2d3e50;
+}
+.footer-block .footer .footer-news .first-news img {
+  height: 40px;
+  width: 40px;
+  border: 1px solid #fff;
+  padding: 5px;
+  float: left;
+  margin-top: 5px;
+}
+.footer-block .footer .footer-news .first-news p {
+  font-size: 18px;
+  color: #fff;
+  float: left;
+  width: 240px;
+  padding: 0px 0px 0px 15px;
+  line-height: 24px;
+  font-family: "SegoeUIRegular";
+}
+.footer-block .footer .footer-news .first-news p a {
+  color: #1dd2af;
+  font-size: 16px;
+  font-family: "SegoeUILight";
+}
+.footer-block .footer .footer-news .second-news {
+  text-align: left;
+  margin-top: 110px;
+}
+.footer-block .footer .footer-news .second-news img {
+  height: 40px;
+  border: 1px solid #fff;
+  padding: 5px;
+  float: left;
+  margin-top: 5px;
+}
+.footer-block .footer .footer-news .second-news p {
+  font-size: 18px;
+  color: #fff;
+  float: left;
+  width: 240px;
+  padding: 0px 0px 0px 15px;
+  line-height: 24px;
+  font-family: "SegoeUIRegular";
+}
+.footer-block .footer .footer-news .second-news p a {
+  color: #1dd2af;
+  font-size: 16px;
+  font-family: "SegoeUILight";
+}
+.footer-block .footer .footer-map {
+  width: 25%;
+  text-align: center;
+  padding-top: 40px;
+  float: left;
+}
+.footer-block .footer .footer-map p {
+  font-family: serif;
+  color: #1dd2af;
+  font-size: 28px;
+  padding-bottom: 35px;
+}
+.footer-block .footer .footer-contact {
+  width: 25%;
+  text-align: center;
+  padding-top: 40px;
+  float: left;
+}
+.footer-block .footer .footer-contact p {
+  font-family: serif;
+  color: #1dd2af;
+  font-size: 28px;
+  padding-bottom: 35px;
+}
+.footer-block .footer .footer-contact ul {
+  text-align: center !important;
+}
+.footer-block .footer .footer-contact ul li {
+  padding-left: 30px;
+  padding-top: 10px;
+}
+.footer-block .footer .footer-contact ul li p {
+  text-align: left;
+  font-size: 16px;
+  color: #fff;
+  width: 270px;
+  padding-bottom: 10px;
+  font-family: "SegoeUIRegular";
+}
+.footer-block .footer .footer-contact ul li p span {
+  color: #1dd2af;
+}
+.footer-block .footer .after-footer {
+  text-align: center;
+  border-top: 1px solid #394e5f;
+  margin: 20px 0px 0px 0px;
+}
+.footer-block .footer .after-footer ul {
+  text-align: center;
+  margin: 20px 0px;
+}
+.footer-block .footer .after-footer ul li {
+  display: inline-block;
+  padding: 5px;
+}
+.footer-block .footer .after-footer ul li span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 100;
+}
+.footer-block .footer .after-footer ul li a {
+  font-size: 18px;
+  padding: 20px 20px;
+  color: #fff;
+  font-family: "SegoeUIRegular";
+}
+.footer-block .footer .after-footer ul li a:hover {
+  color: #1dd2af;
+  cursor: pointer;
+}
+.footer-block .footer .after-footer h6 {
+  color: #9eafbf;
+  font-size: 16px;
+  font-family: "SegoeUISemiBold";
+  font-weight: 100;
+}
+.footer-block .footer .after-footer h6 a {
+  color: #9eafbf;
+}
+.footer-block .footer .after-footer h6 a:hover {
+  color: #1dd2af;
+  cursor: pointer;
+}
