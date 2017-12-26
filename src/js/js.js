@@ -5,11 +5,6 @@ $(document).ready(function() {
     $(toggle_el).toggleClass("open-sidebar");
     $(".wrap-main__nav").toggleClass("toLeft");
     $(".sidebar__link").toggleClass("link-toLeft");
-
-    let screenW = $(window).width();
-    if (screenW >= 580 && screenW < 768) {
-      $(".nav__link").toggleClass("menu__block");
-    }
   });
 
   //Typing text
@@ -36,9 +31,8 @@ $(document).ready(function() {
       let targetPos = target.offset().top;
       let blackTop = $(".black__img").offset();
       let colorTop = $(".color__img").offset();
-      console.log(blackTop.top);
+
       $(".color__img").offset({ top: blackTop.top });
-      console.log($(".mmm").offset());
 
       let imgH = winScrollT - hw; //прокрутка - расстояние до верха
       let imgW = $(".black__img").width();
