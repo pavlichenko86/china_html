@@ -150,22 +150,16 @@ p {
 }
 .main-content {
   width: 100%;
-  min-height: 450px;
   padding: 0px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   position: relative;
-  background: url(../img/thailand/bg-first.jpg) no-repeat;
-  background-size: cover;
-}
-.main-content--contacts {
-  height: auto;
-  min-height: 300px;
 }
 .main-content nav {
   position: absolute;
   padding: 15px 10px 15px 20px;
   background: #2d3e50;
+  top: 24px;
   left: 60px;
   z-index: 7;
 }
@@ -187,7 +181,7 @@ p {
   position: absolute;
   padding: 20px 10px 17px 20px;
   left: 0;
-  top: 0;
+  top: 24px;
   z-index: 7;
   cursor: pointer;
 }
@@ -223,201 +217,133 @@ p {
 /*---FIRST SCREEN-------*/
 .first-wrap {
   padding: 0;
-}
-.first-left {
-  height: 450px;
-  background: #2d3e50;
-  position: relative;
-  padding-top: 50px;
-}
-.first-left__block {
-  background: #fff;
-  position: relative;
-  top: 0;
-  width: 130%;
-  height: calc(100% + 40px);
-  right: -13px;
-  z-index: 1;
-}
-.first-left__title {
-  display: inline-block;
-  padding: 20px 47px;
-  background: #2d3e50;
-  color: #fff;
-  font-family: "SegoeUISemiBold";
-  font-size: 25px;
-  text-align: center;
-  text-transform: uppercase;
-  margin-top: 45px;
-}
-.contacts {
-  font-family: "SegoeUISemiBold";
-  font-size: 17px;
-  color: #2d3e50;
-  padding: 40px 0 0 100px;
-  position: relative;
-}
-.contacts--adres:before {
-  content: "";
-  position: absolute;
-  top: 25px;
-  left: 25px;
-  display: block;
-  width: 55px;
-  height: 55px;
-  background: url(../img/local.png) no-repeat;
-}
-.contacts--mail:before {
-  content: "";
-  position: absolute;
-  top: 25px;
-  left: 25px;
-  display: block;
-  width: 55px;
-  height: 55px;
-  background: url(../img/mail.png) no-repeat;
-}
-.contacts--tel:before {
-  content: "";
-  position: absolute;
-  top: 25px;
-  left: 25px;
-  display: block;
-  width: 55px;
-  height: 55px;
-  background: url(../img/tel.png) no-repeat;
-}
-.contacts--social:before {
-  content: "";
-  position: absolute;
-  top: 25px;
-  left: 25px;
-  display: block;
-  width: 55px;
-  height: 55px;
-  background: url(../img/social.png) no-repeat;
-}
-.contacts--social {
-  font-size: 21px;
-}
-.contacts--social i {
-  margin-left: 15px;
-}
-.social-link {
-  color: #2d3e50;
-}
-.social-link:hover {
-  color: #0daa8d;
-  text-decoration: none;
-}
-.info_wrapper__line {
-  width: 4px;
-  height: 125px;
-  position: absolute;
-  top: 50px;
-  left: 107%;
-  background: #2d3e50;
-  z-index: 3;
-}
-.info_wrapper__line-green {
-  width: 3px;
-  height: 52px;
-  position: absolute;
-  top: 50px;
-  left: 109%;
-  background: #1dd2af;
-  z-index: 3;
-}
-.first-right {
-  height: 450px;
-  padding: 0;
-  background: #fff;
-}
-/*-----------------------*/
-
-/*----CONTACTS-FORM------*/
-.contacts-form {
-  background: url(../img/bg-form.jpg) no-repeat 20% 67%;
+  height: 100px;
+  background: url(../img/services.jpg) no-repeat center;
   background-size: cover;
+}
+.first-wrap__wr {
+  height: 100%;
   position: relative;
   overflow: hidden;
+  background: rgba(45, 62, 80, 0.3);
 }
-.contacts-form-shadow {
-  padding: 110px 0 70px;
-  background: rgba(255, 255, 255, 0.5);
-  overflow: hidden;
-}
-.top-shadow {
-  width: 100%;
-  height: 40px;
-  background: rgba(45, 62, 80, 0.9);
+.right_log {
+  display: block;
+  padding: 15px 40px;
   position: absolute;
-  top: 0;
-}
-.row--form {
-  display: table-cell;
-  /* padding: 61px 10px 10px; */
-  overflow: hidden;
-  height: 300px;
-  vertical-align: middle;
-}
-.form-block {
-  background: #fff;
-  height: 300px;
-}
-.contacts-form-form input {
-  width: 100%;
-  margin-top: 25px;
-  padding: 10px 22px;
-}
-.contacts-form-form .cont-submit {
-  width: auto;
-  font-family: "SegoeUISemiBold";
+  top: 24px;
+  right: 0;
+  z-index: 9;
   color: #fff;
-  font-size: 17px;
-  border: none;
   background: #2d3e50;
-}
-.contacts-form-form .cont-submit:hover {
-  text-decoration: none;
-  color: #fff;
-  -webkit-box-shadow: 10px 7px 13px -5px rgba(55, 124, 158, 1);
-  -moz-box-shadow: 10px 7px 13px -5px rgba(55, 124, 158, 1);
-  box-shadow: 10px 7px 13px -5px rgba(55, 124, 158, 1);
-}
-.contacts-form-title {
-  display: inline-block;
-  padding: 10px 15px;
-  color: #fff;
-  position: absolute;
-  top: 10px;
-  left: -32px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 22px;
-  background: #0daa8d;
   text-transform: uppercase;
+  font-family: "SegoeUISemiBold";
+  font-size: 14px;
+  font-weight: 400;
 }
-.callback-form {
-  z-index: 1;
-  padding: 61px 10px 10px;
+
+.right_log:active,
+.right_log:visited,
+.right_log:focus {
+  color: #fff;
+  text-decoration: none;
 }
-.form-img {
-  /* position: absolute;
-  top: -38%;
-  right: 6%; */
-  width: 100%;
-  height: 300px;
-  /* margin: 15px 0; */
+.right_log:hover {
+  color: #1fd3b0;
+  text-decoration: none;
 }
-#map {
-  height: 100%;
-}
-.gmnoprint {
+.show-log {
   display: none;
 }
+
 /*-----------------------*/
 
+/*----SERVICES------------*/
+.our-services {
+  overflow: hidden;
+  background: #eaeaea;
+  padding-bottom: 30px;
+}
+.services-wrap {
+  background: #eaeaea;
+  padding: 0;
+}
+.services-name {
+  font-family: "SegoeUISemiBold";
+  padding: 0 10px;
+}
+.services-item {
+  padding: 10px;
+  margin-top: 5px;
+  background: #fff;
+  box-sizing: border-box;
+  border: 1px solid #0cb191;
+}
+.services-photo {
+  height: 180px;
+  width: 100%;
+}
+.services-item__name {
+  font-family: "SegoeUISemiBold";
+  color: #2d3e50;
+  text-align: left;
+}
+.services-item__name--left {
+  text-align: right;
+}
+.services-item__text {
+  font-family: "SegoeUIRegular";
+  position: relative;
+  height: 60px;
+  overflow: hidden;
+}
+
+.services-more {
+  display: block;
+  position: absolute;
+  padding: 10px 20px;
+  background: #2d3e50;
+  right: -80px;
+  bottom: 0;
+  font-family: "SegoeUIRegular";
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.services-more--right {
+  right: unset;
+  left: -80px;
+}
+.services-more:active,
+.services-more:visited,
+.services-more:focus {
+  color: #fff;
+  text-decoration: none;
+}
+.services-more:hover {
+  color: #1fd3b0;
+  text-decoration: none;
+}
+.services-pagination {
+  display: flex;
+  margin: 7px auto 0;
+  justify-content: center;
+}
+.pagination__item {
+  color: #fff;
+  background: #2d3e50;
+  padding: 5px 8px;
+  margin-left: 5px;
+  transition: background 1s;
+}
+.pagination__item:hover {
+  color: #fff;
+  text-decoration: none;
+  background: #1dd2af;
+  transition: background 1s;
+}
+
+/*----------------*/
 /*----PARTNERS----------*/
 .our-partners-block {
   width: 100%;
@@ -691,9 +617,7 @@ p {
   }
 
   /*----------------*/
-  .contacts {
-    font-size: 16px;
-  }
+
   /*-----CONTENT----------*/
 
   .our-partners-block .our-partners ul li {
@@ -802,58 +726,29 @@ p {
   /*------------------*/
 
   /*-----CONTENT-----------*/
-
-  .contacts {
-    font-family: "SegoeUISemiBold";
-    font-size: 16px;
-    color: #2d3e50;
-    padding: 29px 0 0 79px;
+  .services-item {
+    width: 95%;
+    margin: 5px auto 0;
+  }
+  .services-item__name {
+    text-align: center;
+  }
+  .services-more {
     position: relative;
+    display: inline-block;
+    bottom: 0;
+    right: 0;
+    left: 50%;
+    margin-top: 15px;
+    transform: translateX(-50%);
   }
-  .contacts--adres:before {
-    content: "";
-    position: absolute;
-    top: 25px;
-    left: 25px;
+  .services-photo {
+    height: auto;
+    width: 75%;
     display: block;
-    width: 40px;
-    height: 40px;
-    background: url(../img/local.png) no-repeat;
-    background-size: cover;
+    margin: 0 auto;
   }
-  .contacts--mail:before {
-    content: "";
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    display: block;
-    width: 40px;
-    height: 40px;
-    background: url(../img/mail.png) no-repeat;
-    background-size: cover;
-  }
-  .contacts--tel:before {
-    content: "";
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    display: block;
-    width: 40px;
-    height: 40px;
-    background: url(../img/tel.png) no-repeat;
-    background-size: cover;
-  }
-  .contacts--social:before {
-    content: "";
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    display: block;
-    width: 40px;
-    height: 40px;
-    background: url(../img/social.png) no-repeat;
-    background-size: cover;
-  }
+
   .our-partners-block .our-partners ul li {
     width: 49%;
   }
@@ -980,19 +875,28 @@ p {
   /*----------------*/
 
   /*-----CONTENT--------*/
-
-  .info_wrapper__line,
-  .info_wrapper__line-green {
-    display: none;
+  .services-item {
+    width: 95%;
+    margin: 5px auto 0;
   }
-  .first-left__block {
-    width: 100%;
+  .services-item__name {
+    text-align: center;
+  }
+  .services-more {
+    position: relative;
+    display: inline-block;
+    bottom: 0;
     right: 0;
+    left: 50%;
+    margin-top: 15px;
+    transform: translateX(-50%);
   }
-  .contacts-form-title {
-    left: 0;
+  .services-photo {
+    height: auto;
+    width: 95%;
+    display: block;
+    margin: 0 auto;
   }
-
   /*--------------------*/
   /*----------------*/
   .footer-block .footer .footer-logo {
@@ -1218,70 +1122,27 @@ p {
   /*------------------------------*/
 
   /*---CONTENT---------*/
-  .info_wrapper__line-green,
-  .info_wrapper__line {
-    display: none;
+  .services-item {
+    width: 95%;
+    margin: 5px auto 0;
   }
-  .first-left__block {
-    width: 100%;
-    height: calc(100% + 40px);
-    right: 0;
-  }
-  .contacts {
-    font-family: "SegoeUISemiBold";
-    font-size: 16px;
-    color: #2d3e50;
-    padding: 29px 0 0 79px;
-    position: relative;
-  }
-  .contacts--adres:before {
-    content: "";
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    display: block;
-    width: 40px;
-    height: 40px;
-    background: url(../img/local.png) no-repeat;
-    background-size: cover;
-  }
-  .contacts--mail:before {
-    content: "";
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    display: block;
-    width: 40px;
-    height: 40px;
-    background: url(../img/mail.png) no-repeat;
-    background-size: cover;
-  }
-  .contacts--tel:before {
-    content: "";
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    display: block;
-    width: 40px;
-    height: 40px;
-    background: url(../img/tel.png) no-repeat;
-    background-size: cover;
-  }
-  .contacts--social:before {
-    content: "";
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    display: block;
-    width: 40px;
-    height: 40px;
-    background: url(../img/social.png) no-repeat;
-    background-size: cover;
-  }
-  .contacts-form-title {
-    width: 100%;
-    left: 0;
+  .services-item__name {
     text-align: center;
+  }
+  .services-more {
+    position: relative;
+    display: inline-block;
+    bottom: 0;
+    right: 0;
+    left: 50%;
+    margin-top: 15px;
+    transform: translateX(-50%);
+  }
+  .services-photo {
+    height: auto;
+    width: 95%;
+    display: block;
+    margin: 0 auto;
   }
   /*--------------*/
 
@@ -1542,73 +1403,73 @@ p {
     display: none;
   }
 
+  /*---LOGIN-----*/
+  .right_log {
+    padding: 15px 30px;
+    right: -250px;
+    transition: all 0.4s;
+  }
+  .right_log--show {
+    right: 0;
+    transition: all 0.4s;
+  }
+  .show-log {
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 50px;
+    top: 24px;
+    right: 0;
+    z-index: 9;
+    color: #fff;
+    background: #2d3e50;
+    text-transform: uppercase;
+    font-family: "SegoeUISemiBold";
+    font-size: 30px;
+    font-weight: 400;
+    padding-left: 9px;
+    transition: all 0.5s;
+  }
+  .show-log--show {
+    right: 205px;
+    transition: all 0.5s;
+  }
+  .show-log:active,
+  .show-log:visited,
+  .show-log:focus {
+    color: #fff;
+    text-decoration: none;
+  }
+  .show-log:hover {
+    color: #1fd3b0;
+    text-decoration: none;
+  }
+
   /*------------------------------*/
 
   /*---CONTENT---------*/
-  .info_wrapper__line-green,
-  .info_wrapper__line {
-    display: none;
+  .services-item {
+    overflow: hidden;
+    width: 95%;
+    margin: 5px auto 0;
   }
-  .first-left__block {
-    width: 100%;
-    height: calc(100% + 40px);
-    right: 0;
-  }
-  .contacts {
-    font-family: "SegoeUISemiBold";
-    font-size: 16px;
-    color: #2d3e50;
-    padding: 29px 0 0 79px;
-    position: relative;
-  }
-  .contacts--adres:before {
-    content: "";
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    display: block;
-    width: 40px;
-    height: 40px;
-    background: url(../img/local.png) no-repeat;
-    background-size: cover;
-  }
-  .contacts--mail:before {
-    content: "";
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    display: block;
-    width: 40px;
-    height: 40px;
-    background: url(../img/mail.png) no-repeat;
-    background-size: cover;
-  }
-  .contacts--tel:before {
-    content: "";
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    display: block;
-    width: 40px;
-    height: 40px;
-    background: url(../img/tel.png) no-repeat;
-    background-size: cover;
-  }
-  .contacts--social:before {
-    content: "";
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    display: block;
-    width: 40px;
-    height: 40px;
-    background: url(../img/social.png) no-repeat;
-    background-size: cover;
-  }
-  .contacts-form-title {
-    width: 100%;
-    left: 0;
+  .services-item__name {
     text-align: center;
+  }
+  .services-more {
+    position: relative;
+    display: inline-block;
+    bottom: 0;
+    right: 0;
+    left: 50%;
+    margin-top: 15px;
+    transform: translateX(-50%);
+  }
+  .services-photo {
+    height: auto;
+    width: 95%;
+    display: block;
+    margin: 0 auto;
   }
   /*--------------*/
 
@@ -1616,6 +1477,7 @@ p {
   .our-partners-block .our-partners ul li a img {
     width: 150px;
   }
+
   /*-----------------*/
 
   /*---------FOOTER---------------------*/

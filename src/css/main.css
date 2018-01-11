@@ -201,6 +201,9 @@ html {
   padding: 5px;
   font-family: "SegoeUILight";
 }
+.left-block > img {
+  width: 250px;
+}
 .main-content .wrap-main .content .right-block {
   position: relative;
   top: -70px;
@@ -1168,14 +1171,14 @@ html {
 }
 .footer-block .footer .footer-contact ul li {
   padding-left: 30px;
-  padding-top: 10px;
+  padding-top: 0;
 }
 .footer-block .footer .footer-contact ul li p {
   text-align: left;
   font-size: 16px;
   color: #fff;
   width: 270px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   font-family: "SegoeUIRegular";
 }
 .footer-block .footer .footer-contact ul li p span {
@@ -1222,6 +1225,30 @@ html {
   color: #1dd2af;
   cursor: pointer;
 }
+
+.footer-block .footer .footer-contact ul li p .footer__tel {
+  display: block;
+  color: #fff;
+}
+.footer__soc {
+  margin-top: 30px;
+  font-size: 1.3em;
+}
+.footer__soc i {
+  color: #fff;
+  padding: 10px;
+}
+.footer__soc i:hover {
+  font-size: 1.3em;
+  color: #399d94;
+  text-decoration: none;
+}
+.cont__name {
+  display: block;
+}
+
+/*-----MEDIA QUERYS--------------*/
+
 @media screen and (min-width: 990px) and (max-width: 1270px) {
   .best-tour-block .best-tour .best-tour-text h4 {
     font-size: 20px;

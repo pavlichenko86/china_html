@@ -178,50 +178,58 @@
     <div class="house-empty"></div>
       <div class="house-links">
         <div class="row row--house">
-          <a href="#" class="col-sm-12 house-links__item1">
+          <div class="col-sm-12 house-links__item1">
             <div class="house-item__wrap">
-              <div class="house-links1__img"></div>
+              <div class="house-links__img">
+                <img src="img/china/hotels/hotel1.jpg" alt="hotel">
+              </div>
               <div class="house-links__name">Название отеля</div>
               <div class="house-links__city">Пекин</div>
             </div>
             <div class="house-links__descr">
               <div class="house-links__info">Отельный комплекс с отличным сервисом</div>  
-              <div class="house-links__more">подробнее</div>
+              <a href="#" class="house-links__more">подробнее</a>
             </div>    
-          </a>
-          <a href="#" class="col-sm-12 house-links__item2">
+          </div>
+          <div class="col-sm-12 house-links__item2">
             <div class="house-item__wrap">
-              <div class="house-links2__img"></div>
+              <div class="house-links__img">
+                <img src="img/china/hotels/hotel1.jpg" alt="hotel">
+              </div>
               <div class="house-links__name">Название отеля</div>
               <div class="house-links__city">Пекин</div>
             </div>  
             <div class="house-links__descr">
               <div class="house-links__info">Отельный комплекс с отличным сервисом</div>  
-              <div class="house-links__more">подробнее</div>
+              <a href="#" class="house-links__more">подробнее</a>
             </div>    
-          </a>
-          <a href="#" class="col-sm-12 house-links__item3">
+          </div>
+          <div class="col-sm-12 house-links__item3">
             <div class="house-item__wrap">
-              <div class="house-links3__img"></div>
+              <div class="house-links__img">
+                <img src="img/china/hotels/hotel3.jpg" alt="hotel">
+              </div>
               <div class="house-links__name">Название отеля</div>
               <div class="house-links__city">Пекин</div>
             </div> 
             <div class="house-links__descr">
               <div class="house-links__info">Отельный комплекс с отличным сервисом</div>  
-              <div class="house-links__more">подробнее</div>
+              <a href="#" class="house-links__more">подробнее</a>
             </div>    
-          </a>
-          <a href="#" class="col-sm-12 house-links__item4">
+          </div>
+          <div class="col-sm-12 house-links__item4">
             <div class="house-item__wrap">
-              <div class="house-links4__img"></div>
+              <div class="house-links__img">
+                <img src="img/china/hotels/hotel1.jpg" alt="hotel">
+              </div>
               <div class="house-links__name">Название отеля</div>
               <div class="house-links__city">Пекин</div>
             </div> 
             <div class="house-links__descr">
               <div class="house-links__info">Отельный комплекс с отличным сервисом</div>  
-              <div class="house-links__more">подробнее</div>
+              <a href="#" class="house-links__more">подробнее</a>
             </div>    
-          </a>
+          </div>
         </div>
       </div>
     </div>
@@ -297,11 +305,12 @@
         <div class="footer">
           <div class="footer-logo">
             <img src="img/logo.png" alt="Logo">
-            <p>Поиск по сайту</p>
-            <form action="#">
-              <input type="text" placeholder="Поиск по сайту">
-              <button><i class="fa fa-search fa-2x" aria-hidden="true"></i></button>
-            </form>
+            <div class="footer__soc">
+              <a href="#"><span><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></span></a>
+              <a href="#"><span><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></span></a>
+              <a href="#"><span><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></span></a>
+              <a href="#"><span><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></span></a>
+            </div>
           </div>
           <div class="footer-news">
             <p>Последние новости</p>
@@ -321,16 +330,10 @@
           <div class="footer-contact">
             <p class="cont">Контакты</p>
             <ul>
-              <li><p>ул. Соборная, офис 35, г. Кременчуг</p></li>
-              <li><p><span>E-mail:</span> travel-club@gmail.com</p></li>
-              <li><p><span>Телефоны:</span> +380(67) 531-555-7, (099) 9-840-488, (096) 379-26-36</p></li>
+              <li><p><span class="cont__name">Адрес:</span> ул. Генерала Жадова 2, офис 1, г. Кременчуг</p></li>
+              <li><p><span class="cont__name">E-mail:</span> travelclubkrem1@gmail.com</p></li>
+              <li><p><span class="cont__name">Телефоны:</span><span class="footer__tel">+380 (50) 419-55-45,</span><span class="footer__tel">+380 (96) 549-10-91</span></p></li>
               <li>
-              <a href="#"><span><i style="color: #fff; padding: 10px;" class="fa fa-facebook fa-lg" aria-hidden="true"></i></span></a>
-              <a href="#"><span><i style="color: #fff; padding: 10px;" class="fa fa-twitter fa-lg" aria-hidden="true"></i></span></a>
-              <a href="#"><span><i style="color: #fff; padding: 10px;" class="fa fa-tumblr fa-lg" aria-hidden="true"></i></span></a>
-              <a href="#"><span><i style="color: #fff; padding: 10px;" class="fa fa-pinterest fa-lg" aria-hidden="true"></i></span></a>
-              </li>
-
             </ul>
           </div>
           <p style="clear: both;"></p>
@@ -351,23 +354,23 @@
         </div>
     </footer>
     <script>
-          $('#target').click( function(event){
-            event.stopPropagation();
-            $('#other').fadeToggle(1000);
+        //   $('#target').click( function(event){
+        //     event.stopPropagation();
+        //     $('#other').fadeToggle(1000);
 
-        });
-          $(document).click( function(){
-               $('#other').hide();
-           });
+        // });
+        //   $(document).click( function(){
+        //        $('#other').hide();
+        //    });
 
-          var trigger = document.querySelector('.trigger')
-          trigger.addEventListener('click', function() {
-            if (trigger.classList.contains('trigger--show')) {
-              trigger.classList.remove('trigger--show');
-            } else {
-              trigger.classList.add('trigger--show')
-            };
-          });
+          // var trigger = document.querySelector('.trigger')
+          // trigger.addEventListener('click', function() {
+          //   if (trigger.classList.contains('trigger--show')) {
+          //     trigger.classList.remove('trigger--show');
+          //   } else {
+          //     trigger.classList.add('trigger--show')
+          //   };
+          // });
            </script>
 
   </body>

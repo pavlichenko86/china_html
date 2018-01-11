@@ -119,6 +119,10 @@ p {
   background: #1dd2af;
   text-decoration: none;
 }
+.nav__link2:visited {
+  text-decoration: none;
+  color: #fff;
+}
 .wrap-main .link-toLeft {
   left: 240px !important;
   transition: all 0.5s linear;
@@ -170,6 +174,18 @@ p {
   background: url(../img/thailand/bg-first.jpg) no-repeat;
   background-size: cover;
 }
+.main-content--eg {
+  background: url(../img/egypt/bg-first.jpg) no-repeat;
+  background-size: cover;
+}
+.main-content--ind {
+  background: url(../img/india/bg-first.jpg) no-repeat;
+  background-size: cover;
+}
+.main-content--tur {
+  background: url(../img/turkey/bg-first.jpg) no-repeat;
+  background-size: cover;
+}
 .main-content nav {
   position: absolute;
   padding: 15px 10px 15px 20px;
@@ -217,13 +233,28 @@ p {
   position: relative;
 }
 .thai-map {
-  padding-top: 30px;
+  padding-top: 51px;
+}
+.tur-map {
+  padding-top: 96px;
+}
+.ind-map {
+  padding-top: 54px;
 }
 .china-map__map {
   width: 200px;
 }
 .thai-map__map {
   height: 200px;
+}
+.eg-map__map {
+  height: 138px;
+}
+.tur-map__map {
+  height: 105px;
+}
+.ind-map__map {
+  height: 142px;
 }
 .china-map__name {
   font-family: "Roboto", sans-serif;
@@ -283,6 +314,9 @@ p {
 .thai-photo__right {
   width: 27%;
 }
+.eg-photo__right {
+  width: 50%;
+}
 
 .china-photo__xram,
 .china-photo__soldiers,
@@ -290,6 +324,29 @@ p {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+.thai-photo__soldiers,
+.thai-photo__wall {
+  width: 96%;
+}
+.thai-photo__wall {
+  right: 0;
+}
+.eg-photo__xram {
+  width: 70%;
+}
+.ind-photo__xram {
+  width: 43%;
+}
+.tur-photo__xram {
+  width: 70%;
+}
+.tur-mountaine {
+  width: 158%;
+}
+.tur-xram-right {
+  right: 0;
+  width: 98%;
 }
 
 /*---BLOCK - INFO--------*/
@@ -305,6 +362,15 @@ p {
 }
 .thai-block__info {
   background: url(../img/thailand/bg-info.jpg) no-repeat 46% 35%;
+}
+.eg-block__info {
+  background: url(../img/egypt/bg-info.jpg) no-repeat 46% 35%;
+}
+.ind-block__info {
+  background: url(../img/india/bg-info.jpg) no-repeat 46% 35%;
+}
+.tur-block__info {
+  background: url(../img/turkey/bg-info.jpg) no-repeat 46% 35%;
 }
 .info_wrapper {
   height: 100%;
@@ -386,6 +452,15 @@ p {
 .thai-block__places {
   background: url(../img/thailand/bg-places.jpg) no-repeat 0 45%;
 }
+.eg-block__places {
+  background: url(../img/egypt/bg-places.jpg) no-repeat 74% 45%;
+}
+.ind-block__places {
+  background: url(../img/india/bg-places.jpg) no-repeat 74% 45%;
+}
+.tur-block__places {
+  background: url(../img/turkey/bg-places.jpg) no-repeat 43% 75%;
+}
 .block__places__shadow {
   height: 100vh;
   min-height: 620px;
@@ -427,6 +502,18 @@ p {
   background: url(../img/thailand/places-1.jpg) no-repeat 63% 75%;
   transition: all 0.5s;
 }
+.eg-places__img__wrap1 {
+  background: url(../img/egypt/places-1.jpg) no-repeat 63% 75%;
+  transition: all 0.5s;
+}
+.ind-places__img__wrap1 {
+  background: url(../img/india/places-1.jpg) no-repeat 51% 4%;
+  transition: all 0.5s;
+}
+.tur-places__img__wrap1 {
+  background: url(../img/turkey/places-1.jpg) no-repeat 51% 4%;
+  transition: all 0.5s;
+}
 .places__img__wrap1:hover,
 .places__img__wrap2:hover,
 .places__img__wrap3:hover,
@@ -437,6 +524,7 @@ p {
 .thai-places__img__wrap1:hover {
   transform: scale(1.2);
   transition: all 0.5s;
+  cursor: pointer;
 }
 .places__name1 {
   position: absolute;
@@ -475,6 +563,18 @@ p {
   background: url(../img/thailand/places-2.jpg) no-repeat 20% 45%;
   transition: all 0.5s;
 }
+.eg-places__img__wrap2 {
+  background: url(../img/egypt/places-2.jpg) no-repeat 63% 75%;
+  transition: all 0.5s;
+}
+.ind-places__img__wrap2 {
+  background: url(../img/india/places-2.jpg) no-repeat 63% 75%;
+  transition: all 0.5s;
+}
+.tur-places__img__wrap2 {
+  background: url(../img/turkey/places-2.jpg) no-repeat 63% 75%;
+  transition: all 0.5s;
+}
 .places__name2 {
   position: absolute;
   top: 13px;
@@ -498,6 +598,18 @@ p {
 .thai-places__img__wrap3 {
   background: url(../img/thailand/places-3.jpg) no-repeat 20%;
 }
+.eg-places__img__wrap3 {
+  background: url(../img/egypt/places-3.jpg) no-repeat 63% 46%;
+  transition: all 0.5s;
+}
+.ind-places__img__wrap3 {
+  background: url(../img/india/places-3.jpg) no-repeat 63% 46%;
+  transition: all 0.5s;
+}
+.tur-places__img__wrap3 {
+  background: url(../img/turkey/places-3.jpg) no-repeat 63% 8%;
+  transition: all 0.5s;
+}
 .places__name3 {
   position: absolute;
   bottom: 13px;
@@ -520,6 +632,18 @@ p {
 }
 .thai-places__img__wrap4 {
   background: url(../img/thailand/places-4.jpg) no-repeat 0 35%;
+}
+.eg-places__img__wrap4 {
+  background: url(../img/egypt/places-4.jpg) no-repeat 63% 32%;
+  transition: all 0.5s;
+}
+.ind-places__img__wrap4 {
+  background: url(../img/india/places-4.jpg) no-repeat 63% 12%;
+  transition: all 0.5s;
+}
+.tur-places__img__wrap4 {
+  background: url(../img/turkey/places-4.jpg) no-repeat 63% 12%;
+  transition: all 0.5s;
 }
 .places__name4 {
   position: absolute;
@@ -672,7 +796,7 @@ p {
 .house-links__item3:hover,
 .house-links__item4:hover {
   text-decoration: none;
-  transform: scale(1.1);
+  transform: scale(1.05);
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -681,45 +805,13 @@ p {
   -webkit-box-shadow: 1px 1px 12px 2px rgba(0, 0, 0, 0.5);
   box-shadow: 1px 1px 12px 2px rgba(0, 0, 0, 0.5);
 }
-.house-links1__img {
+.house-links__img {
   height: 190px;
-  background: url(../img/china/hotels/hotel1.jpg) no-repeat;
-  background-size: cover;
+  overflow: hidden;
 }
-.house-links1__img--thai {
-  background: url(../img/thailand/hotels/hotel1.jpg) no-repeat;
-  height: 190px;
-  background-size: cover;
-}
-.house-links2__img {
-  height: 190px;
-  background: url(../img/china/hotels/hotel1.jpg) no-repeat;
-  background-size: cover;
-}
-.house-links2__img--thai {
-  background: url(../img/thailand/hotels/hotel2.jpg) no-repeat;
-  height: 190px;
-  background-size: cover;
-}
-.house-links3__img {
-  height: 190px;
-  background: url(../img/china/hotels/hotel3.jpg) no-repeat;
-  background-size: cover;
-}
-.house-links3__img--thai {
-  background: url(../img/thailand/hotels/hotel3.jpg) no-repeat;
-  height: 190px;
-  background-size: cover;
-}
-.house-links4__img {
-  height: 190px;
-  background: url(../img/china/hotels/hotel3.jpg) no-repeat;
-  background-size: cover;
-}
-.house-links4__img--thai {
-  background: url(../img/thailand/hotels/hotel3.jpg) no-repeat;
-  height: 190px;
-  background-size: cover;
+.house-links__img > img {
+  height: 185px;
+  width: 100%;
 }
 .house-links__name {
   font-family: "Roboto", sans-serif;
@@ -746,6 +838,7 @@ p {
 }
 .house-links__more {
   position: absolute;
+  display: block;
   top: 0;
   left: -30px;
   padding: 15px 10px;
@@ -754,6 +847,11 @@ p {
   font-weight: 300;
   font-size: 20px;
   background: #00d3af;
+}
+.house-links__more:hover {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
 }
 
 /*----CONTAINER-RULES----------*/
@@ -767,6 +865,18 @@ p {
 }
 .container-rules--thai {
   background: url(../img/thailand/bg-rules.jpg) no-repeat 0 17%;
+  background-size: cover;
+}
+.container-rules--eg {
+  background: url(../img/egypt/bg-rules.jpg) no-repeat 0 73%;
+  background-size: cover;
+}
+.container-rules--ind {
+  background: url(../img/india/bg-rules.jpg) no-repeat 0 50%;
+  background-size: cover;
+}
+.container-rules--tur {
+  background: url(../img/turkey/bg-rules.jpg) no-repeat;
   background-size: cover;
 }
 .rules__left {
@@ -870,6 +980,18 @@ p {
 }
 .china-video-wrap--thai {
   background: url(../img/thailand/bg-video.jpg) no-repeat 0 70%;
+  background-size: cover;
+}
+.china-video-wrap--eg {
+  background: url(../img/egypt/bg-video.jpg) no-repeat 0 70%;
+  background-size: cover;
+}
+.china-video-wrap--ind {
+  background: url(../img/india/bg-video.jpg) no-repeat 0 70%;
+  background-size: cover;
+}
+.china-video-wrap--tur {
+  background: url(../img/turkey/bg-video.jpg) no-repeat 0 70%;
   background-size: cover;
 }
 .china-video-shadow {
@@ -1025,7 +1147,7 @@ p {
   padding-top: 40px;
   float: left;
 }
-.footer-block .footer .footer-contact p {
+.footer-block .footer .footer-contact h3 {
   font-family: serif;
   color: #1dd2af;
   font-size: 28px;
@@ -1036,14 +1158,14 @@ p {
 }
 .footer-block .footer .footer-contact ul li {
   padding-left: 30px;
-  padding-top: 10px;
+  padding-top: 0;
 }
 .footer-block .footer .footer-contact ul li p {
   text-align: left;
   font-size: 16px;
   color: #fff;
   width: 270px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   font-family: "SegoeUIRegular";
 }
 .footer-block .footer .footer-contact ul li p span {
@@ -1089,4 +1211,24 @@ p {
 .footer-block .footer .after-footer h6 a:hover {
   color: #1dd2af;
   cursor: pointer;
+}
+.footer-block .footer .footer-contact ul li p .footer__tel {
+  display: block;
+  color: #fff;
+}
+.footer__soc {
+  margin-top: 30px;
+  font-size: 1.3em;
+}
+.footer__soc i {
+  color: #fff;
+  padding: 10px;
+}
+.footer__soc i:hover {
+  font-size: 1.3em;
+  color: #399d94;
+  text-decoration: none;
+}
+.cont__name {
+  display: block;
 }

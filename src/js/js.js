@@ -7,6 +7,12 @@ $(document).ready(function() {
     $(".sidebar__link").toggleClass("link-toLeft");
   });
 
+  //show login
+  $(".show-log").click(function() {
+    $(this).toggleClass("show-log--show");
+    $(".right_log").toggleClass("right_log--show");
+  });
+
   //Typing text
   var wow = new WOW({
     boxClass: "wow1",
@@ -48,13 +54,9 @@ $(document).ready(function() {
       let mmmT = $(".mmm").css("top");
       mmmT = parseInt(mmmT.replace(/\D+/g, ""));
       if (hgh < 180 && hgh > 0 && mmmT >= 1) {
+        //   180
         $(".mmm").css("top", mmmT - 1);
       }
-      // let imgScr = $(".color__img").css("bottom");
-      // imgScr = parseInt(imgScr.replace(/\D+/g, ""));
-      // if (hgh < 180 && hgh >= 0 && imgScr >= 65) {
-      //   $(".color__img").css("bottom", imgScr - 1);
-      // }
       $(".mmm").css("height", hgh + "px");
       $(".white").css("height", hgh + "px");
       let itH = $(".container-house").height();
@@ -68,6 +70,12 @@ $(document).ready(function() {
   function funAll() {
     if ($(".block__info").hasClass("thai-block__info")) {
       funThai();
+    } else if ($(".block__info").hasClass("eg-block__info")) {
+      funEg();
+    } else if ($(".block__info").hasClass("ind-block__info")) {
+      funInd();
+    } else if ($(".block__info").hasClass("tur-block__info")) {
+      funTur();
     } else {
       funChina();
     }
@@ -151,6 +159,125 @@ $(document).ready(function() {
     });
   }
 
+  function funEg() {
+    var typed = new Typed("#eg1", {
+      strings: ["2450 км."],
+      typeSpeed: 80,
+      startDelay: 0,
+      showCursor: false
+    });
+    var typed = new Typed("#eg2", {
+      strings: ["95 миллионов"],
+      typeSpeed: 80,
+      startDelay: 0,
+      showCursor: false
+    });
+    var typed = new Typed("#eg3", {
+      strings: ["Каир"],
+      typeSpeed: 80,
+      startDelay: 0,
+      showCursor: false
+    });
+    var typed = new Typed("#eg4", {
+      strings: ["379"],
+      typeSpeed: 80,
+      startDelay: 0,
+      showCursor: false
+    });
+    var typed = new Typed("#eg5", {
+      strings: ["25 С<sup>o</sup>"],
+      typeSpeed: 80,
+      startDelay: 0,
+      showCursor: false,
+      contentType: "html"
+    });
+    var typed = new Typed("#eg6", {
+      strings: ["10 000"],
+      typeSpeed: 80,
+      startDelay: 0,
+      showCursor: false
+    });
+  }
+
+  function funInd() {
+    var typed = new Typed("#ind1", {
+      strings: ["7515 км."],
+      typeSpeed: 80,
+      startDelay: 0,
+      showCursor: false
+    });
+    var typed = new Typed("#ind2", {
+      strings: ["1 миллиард"],
+      typeSpeed: 80,
+      startDelay: 0,
+      showCursor: false
+    });
+    var typed = new Typed("#ind3", {
+      strings: ["Нью-Дели"],
+      typeSpeed: 80,
+      startDelay: 0,
+      showCursor: false
+    });
+    var typed = new Typed("#ind4", {
+      strings: ["379"],
+      typeSpeed: 80,
+      startDelay: 0,
+      showCursor: false
+    });
+    var typed = new Typed("#ind5", {
+      strings: ["25 С<sup>o</sup>"],
+      typeSpeed: 80,
+      startDelay: 0,
+      showCursor: false,
+      contentType: "html"
+    });
+    var typed = new Typed("#ind6", {
+      strings: ["10 000"],
+      typeSpeed: 80,
+      startDelay: 0,
+      showCursor: false
+    });
+  }
+
+  function funTur() {
+    var typed = new Typed("#tur1", {
+      strings: ["3172 км."],
+      typeSpeed: 80,
+      startDelay: 0,
+      showCursor: false
+    });
+    var typed = new Typed("#tur2", {
+      strings: ["80 миллионов"],
+      typeSpeed: 80,
+      startDelay: 0,
+      showCursor: false
+    });
+    var typed = new Typed("#tur3", {
+      strings: ["Анкара"],
+      typeSpeed: 80,
+      startDelay: 0,
+      showCursor: false
+    });
+    var typed = new Typed("#tur4", {
+      strings: ["379"],
+      typeSpeed: 80,
+      startDelay: 0,
+      showCursor: false
+    });
+    var typed = new Typed("#tur5", {
+      strings: ["25 С<sup>o</sup>"],
+      typeSpeed: 80,
+      startDelay: 0,
+      showCursor: false,
+      contentType: "html"
+    });
+    var typed = new Typed("#tur6", {
+      strings: ["10 000"],
+      typeSpeed: 80,
+      startDelay: 0,
+      showCursor: false
+    });
+  }
   //HOUSE
 
   //RULES
@@ -165,34 +292,3 @@ $(document).ready(function() {
     $(".rules__col-right").css("height", rulH);
   });
 });
-
-// $(window).scroll(function() {
-//       let winScrollT = $(this).scrollTop(); // высота прокрутки
-//       let target = $(".container-info");
-//       let targetPos = target.offset().top;
-
-//       let imgH = winScrollT - hw; //прокрутка - расстояние до верха
-//       let imgW = $(".black__img").width();
-//       let hgh = imgH / 2;
-//       $(".color__img").css("width", imgW);
-//       if (winScrollT > hw - 30) {
-//         $(".container-house").css("position", "fixed");
-//       } else if (winScrollT < hw) {
-//         $(".container-house").css("position", "absolute");
-//       }
-//       let mmmT = $(".mmm").css("top");
-//       mmmT = parseInt(mmmT.replace(/\D+/g, ""));
-//       if (hgh < 180 && hgh > 0 && mmmT >= 1) {
-//         $(".mmm").css("top", mmmT - 1);
-//       }
-//       let imgScr = $(".color__img").css("bottom");
-//       imgScr = parseInt(imgScr.replace(/\D+/g, ""));
-//       if (hgh < 180 && hgh >= 0 && imgScr >= 65) {
-//         $(".color__img").css("bottom", imgScr - 1);
-//       }
-//       $(".mmm").css("height", hgh + "px");
-//       $(".white").css("height", hgh + "px");
-//       let itH = $(".container-house").height();
-//       $(".house-links").css("height", itH * 2);
-//       $(".house-empty").css("height", itH);
-//     });

@@ -231,7 +231,20 @@
   .rules__col > figure {
     padding-top: 15px;
   }
+  .rules__item {
+    padding: 0px 0 30px;
+  }
   /*---------------*/
+
+  /*---video------*/
+  .container-video {
+    height: auto;
+    min-height: 0;
+  }
+  .china-video-main iframe {
+    height: 150px;
+  }
+  /*--------------*/
 
   /*FOOTER*/
   .footer-block .footer .footer-logo {
@@ -586,14 +599,29 @@
   .rules__col > figure {
     padding-top: 15px;
   }
+  .rules__item {
+    padding: 0px 0 30px;
+  }
   /*---------------*/
+
+  /*---video------*/
+  .container-video {
+    height: auto;
+    min-height: 0;
+  }
+  .china-video-main iframe {
+    height: 245px;
+  }
+  /*--------------*/
+
+  /*-----footer-------*/
 
   .footer-block .footer .footer-logo {
     text-align: center;
     width: 100%;
     float: none;
     padding-top: 15px;
-    display: none;
+    display: block;
   }
   .footer-block .footer .footer-logo img {
     display: block;
@@ -829,16 +857,33 @@
   .rules__col > figure {
     padding-top: 15px;
   }
+  .rules__item {
+    padding: 0px 0 30px;
+  }
   /*---------------*/
+
+  /*---video------*/
+  .container-video {
+    height: auto;
+    min-height: 0;
+  }
+  .china-video-main iframe {
+    height: 300px;
+  }
+  /*--------------*/
+
+  /*-----footer-------*/
 
   .footer-block .footer .footer-logo {
     text-align: center;
     width: 100%;
     float: none;
     padding-top: 15px;
+    display: block;
   }
   .footer-block .footer .footer-logo img {
-    display: none;
+    display: block;
+    margin: 0 auto 20px;
   }
   .footer-block .footer .footer-logo p {
     display: none;
@@ -1055,7 +1100,8 @@
     padding-top: 15px;
   }
   .footer-block .footer .footer-logo img {
-    display: none;
+    display: block;
+    margin: 0 auto 20px;
   }
   .footer-block .footer .footer-logo p {
     display: none;
@@ -1179,7 +1225,8 @@
     padding-top: 15px;
   }
   .footer-block .footer .footer-logo img {
-    display: none;
+    display: block;
+    margin: 0 auto 20px;
   }
   .footer-block .footer .footer-logo p {
     display: none;

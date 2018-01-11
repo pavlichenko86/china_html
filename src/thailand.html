@@ -65,10 +65,10 @@
             <img class="china-photo__xram wow fadeInLeft" data-wow-duration="3s" src="img/thailand/xram.png" alt="xram">
           </div>
           <div class="china-photo__center thai-photo__center">
-            <img class="china-photo__soldiers wow fadeIn" data-wow-duration="3s" src="img/thailand/soldiers.png" alt="Soldiers">
+            <img class="china-photo__soldiers thai-photo__soldiers wow fadeIn" data-wow-duration="3s" src="img/thailand/soldiers.png" alt="Soldiers">
           </div>
           <div class="china-photo__right thai-photo__right">
-            <img class="china-photo__wall wow fadeInRight" data-wow-duration="3s" src="img/thailand/budda.png" alt="Great Wall">
+            <img class="china-photo__wall thai-photo__wall wow fadeInRight" data-wow-duration="3s" src="img/thailand/budda.png" alt="Great Wall">
           </div>
         </div>
       </div>  
@@ -180,53 +180,64 @@
     <div class="house-empty"></div>
       <div class="house-links house-links--thai">
         <div class="row row--house">
-          <a href="#" class="col-sm-8 house-links__item1">
+          <div class="col-sm-8 house-links__item1">
             <div class="house-item__wrap">
-              <div class="house-links1__img house-links1__img--thai"></div>
+              <div class="house-links__img">
+                <img src="img/thailand/hotels/hotel1.jpg" alt="hotel">
+              </div>
               <div class="house-links__name">Название отеля</div>
               <div class="house-links__city">Бангкок</div>
             </div>
             <div class="house-links__descr">
               <div class="house-links__info">Отельный комплекс с отличным сервисом</div>  
-              <div class="house-links__more">подробнее</div>
+              <a href="#" class="house-links__more">подробнее</a>
             </div>    
-          </a>
-          <a href="#" class="col-sm-8 house-links__item2">
+          </div>
+          <div class="col-sm-8 house-links__item2">
             <div class="house-item__wrap">
-              <div class="house-links2__img house-links2__img--thai"></div>
+              <div class="house-links__img">
+                <img src="img/thailand/hotels/hotel2.jpg" alt="hotel">
+              </div>
               <div class="house-links__name">Название отеля</div>
               <div class="house-links__city">Бангкок</div>
             </div>
             <div class="house-links__descr">
               <div class="house-links__info">Отельный комплекс с отличным сервисом</div>  
-              <div class="house-links__more">подробнее</div>
+              <a href="#" class="house-links__more">подробнее</a>
             </div>    
-          </a>
-          <a href="#" class="col-sm-8 house-links__item3">
+          </div>
+          <div class="col-sm-8 house-links__item3">
             <div class="house-item__wrap">
-              <div class="house-links3__img house-links3__img--thai"></div>
+              <div class="house-links__img">
+                <img src="img/thailand/hotels/hotel3.jpg" alt="hotel">
+              </div>
               <div class="house-links__name">Название отеля</div>
               <div class="house-links__city">Бангкок</div>
             </div>
             <div class="house-links__descr">
               <div class="house-links__info">Отельный комплекс с отличным сервисом</div>  
-              <div class="house-links__more">подробнее</div>
+              <a href="#" class="house-links__more">подробнее</a>
             </div>    
-          </a>
-          <a href="#" class="col-sm-8 house-links__item4">
+          </div>
+          <div class="col-sm-8 house-links__item4">
             <div class="house-item__wrap">
-              <div class="house-links4__img house-links4__img--thai"></div>
+              <div class="house-links__img">
+                <img src="img/thailand/hotels/hotel1.jpg" alt="hotel">
+              </div>
               <div class="house-links__name">Название отеля</div>
               <div class="house-links__city">Бангкок</div>
             </div>
             <div class="house-links__descr">
               <div class="house-links__info">Отельный комплекс с отличным сервисом</div>  
-              <div class="house-links__more">подробнее</div>
+              <a href="#" class="house-links__more">подробнее</a>
             </div>    
-          </a>
+          </div>
+          <a href="#" class="all-hotels">Смотреть все отели</a>
         </div>
       </div>
     </div>
+
+    
     
 
     <div class="container-rules container-rules--thai">
@@ -293,17 +304,31 @@
         </div> 
       </div>
     </div>
-
+<div class="api" style="height: 200px">fbdxf
+      <table id="users">
+          <tr><td>Id</td><td>Имя</td><td>Возраст</td><tr>
+      </table>
+      <script type="text/javascript">
+        $(function(){
+            $.getJSON('https://api.privatbank.ua/p24api/aviasstations?json&address=&state=', function(data) {
+                    for(var i=0;i<data.users.length;i++){
+                        $('#users').append('<tr><td>' + data[i].State + '</td><tr>');
+                    }
+            });
+        });
+      </script>
+    </div>
     <footer>
       <div class="footer-block">
         <div class="footer">
           <div class="footer-logo">
             <img src="img/logo.png" alt="Logo">
-            <p>Поиск по сайту</p>
-            <form action="#">
-              <input type="text" placeholder="Поиск по сайту">
-              <button><i class="fa fa-search fa-2x" aria-hidden="true"></i></button>
-            </form>
+            <div class="footer__soc">
+              <a href="#"><span><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></span></a>
+              <a href="#"><span><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></span></a>
+              <a href="#"><span><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></span></a>
+              <a href="#"><span><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></span></a>
+            </div>
           </div>
           <div class="footer-news">
             <p>Последние новости</p>
@@ -323,16 +348,10 @@
           <div class="footer-contact">
             <p class="cont">Контакты</p>
             <ul>
-              <li><p>ул. Соборная, офис 35, г. Кременчуг</p></li>
-              <li><p><span>E-mail:</span> travel-club@gmail.com</p></li>
-              <li><p><span>Телефоны:</span> +380(67) 531-555-7, (099) 9-840-488, (096) 379-26-36</p></li>
+              <li><p><span class="cont__name">Адрес:</span> ул. Генерала Жадова 2, офис 1, г. Кременчуг</p></li>
+              <li><p><span class="cont__name">E-mail:</span> travelclubkrem1@gmail.com</p></li>
+              <li><p><span class="cont__name">Телефоны:</span><span class="footer__tel">+380 (50) 419-55-45,</span><span class="footer__tel">+380 (96) 549-10-91</span></p></li>
               <li>
-              <a href="#"><span><i style="color: #fff; padding: 10px;" class="fa fa-facebook fa-lg" aria-hidden="true"></i></span></a>
-              <a href="#"><span><i style="color: #fff; padding: 10px;" class="fa fa-twitter fa-lg" aria-hidden="true"></i></span></a>
-              <a href="#"><span><i style="color: #fff; padding: 10px;" class="fa fa-tumblr fa-lg" aria-hidden="true"></i></span></a>
-              <a href="#"><span><i style="color: #fff; padding: 10px;" class="fa fa-pinterest fa-lg" aria-hidden="true"></i></span></a>
-              </li>
-
             </ul>
           </div>
           <p style="clear: both;"></p>
@@ -362,14 +381,14 @@
                $('#other').hide();
            });
 
-          var trigger = document.querySelector('.trigger')
-          trigger.addEventListener('click', function() {
-            if (trigger.classList.contains('trigger--show')) {
-              trigger.classList.remove('trigger--show');
-            } else {
-              trigger.classList.add('trigger--show')
-            };
-          });
+          // var trigger = document.querySelector('.trigger')
+          // trigger.addEventListener('click', function() {
+          //   if (trigger.classList.contains('trigger--show')) {
+          //     trigger.classList.remove('trigger--show');
+          //   } else {
+          //     trigger.classList.add('trigger--show')
+          //   };
+          // });
            </script>
 
   </body>
